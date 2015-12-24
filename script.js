@@ -1,26 +1,12 @@
-var map;
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -34.397, lng: 150.644},
-    zoom: 8
-  });
-}
+window.app = window.app || {};
 
-function addingElement (nodeid, elementType) {
-	var node = document.getElementById(nodeid);
-	node.appendChild(document.createElement(elementType))
-}
 
-addingElement("id1","input");
+(function(){
+	window.myCtrl = function($scope, $rootScope){
+		$scope.names = ["one", "two"];
+		$rootScope.lastname = "number";
+	};
+	;}())
 
-function logger (arg1, arg2, arg3) {
-	console.log(arg1+arg2+arg3);
-};
-
-function arrayadd (arg1, arg2, arg3) {
-	var a = [];
-	a.push(arg1);
-	a.push(arg2);
-	a.push(arg3);
-	console.log(a);
-}
+var app = angular.module("myApp",[]);
+	app.controller("myCtrl", window.myCtrl);

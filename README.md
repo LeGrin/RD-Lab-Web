@@ -7,6 +7,8 @@ Sublime Text: http://www.sublimetext.com
 
 Emmet cheat-sheat: http://docs.emmet.io/cheat-sheet/
 
+https://github.com/LeGrin/RD-Lab-Web.git
+
 Emmet install: 
 {
 View > Show Console
